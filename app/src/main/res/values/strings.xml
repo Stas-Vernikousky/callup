@@ -7,4 +7,10 @@
     <string name="number_saved">Номер сохранён</string>
     <string name="empty_number">Введите номер</string>
     <string name="permission_denied">Разрешение на звонки отклонено</string>
+    <string name="quick_call_label">Номер для быстрого звонка</string>
+    <string name="change_number">Изменить номер</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_title">Настройки</string>
+    <string name="auto_call">Звонить сразу при запуске</string>
+    <string name="back">Назад</string>
 </resources>

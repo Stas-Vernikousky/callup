@@ -6,25 +6,69 @@
     android:gravity="center"
     android:padding="24dp">
 
-    <EditText
-        android:id="@+id/number_input"
+    <LinearLayout
+        android:id="@+id/setup_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/number_hint"
-        android:inputType="phone"
-        android:importantForAutofill="no" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/save_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/save_number" />
+        <EditText
+            android:id="@+id/number_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/number_hint"
+            android:inputType="phone"
+            android:importantForAutofill="no" />
 
-    <Button
-        android:id="@+id/call_button"
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/save_number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/call_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/call" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quick_call_label" />
+
+        <TextView
+            android:id="@+id/saved_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium" />
+
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/call" />
+
+        <Button
+            android:id="@+id/change_number_button"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/change_number" />
+
+        <Button
+            android:id="@+id/settings_button"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/settings" />
+    </LinearLayout>
 </LinearLayout>
