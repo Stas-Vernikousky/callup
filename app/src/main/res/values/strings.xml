@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CallUp</string>
+    <string name="number_hint">Номер телефона</string>
+    <string name="save_number">Сохранить номер</string>
+    <string name="call">Позвонить</string>
+    <string name="number_saved">Номер сохранён</string>
+    <string name="empty_number">Введите номер</string>
+    <string name="permission_denied">Разрешение на звонки отклонено</string>
+</resources>
